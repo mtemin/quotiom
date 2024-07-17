@@ -1,39 +1,39 @@
-import Category from '../../types';
+import {Category} from "../models/Category";
 
-// @ts-ignore
+
 const categories:Category[] = [
   {
-    categoryTitle:"topics",
-    categoryDescription: "Browse by topic titles."
+   title:"topics",
+   description: "Browse by topic titles."
   },
   {
-    categoryTitle:"books",
-    categoryDescription: "Passages from books."
+   title:"books",
+   description: "Passages from books."
   },
 
   {
-    categoryTitle:"people",
-    categoryDescription: "Authors, leaders, celebrities"
+   title:"people",
+   description: "Authors, leaders, celebrities"
   },
   {
-    categoryTitle:"music",
-    categoryDescription: "Quotes from songs"
+   title:"music",
+   description: "Quotes from songs"
   },
   {
-    categoryTitle:"proverbs",
-    categoryDescription: "Citations by previous generations"
+   title:"proverbs",
+   description: "Citations by previous generations"
   },
   {
-    categoryTitle:"movies",
-    categoryDescription: "Excerpts from movies/fictional characters"
+   title:"movies",
+   description: "Excerpts from movies/fictional characters"
   },
   {
-    categoryTitle:"animes",
-    categoryDescription: "Quotations by fictional anime characters"
+   title:"animes",
+   description: "Quotations by fictional anime characters"
   },
   {
-    categoryTitle:"cartoons & animations",
-    categoryDescription: "Quotations by fictional cartoon characters."
+   title:"cartoons & animations",
+   description: "Quotations by fictional cartoon characters."
   },
 ]
 

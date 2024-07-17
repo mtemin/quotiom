@@ -1,4 +1,4 @@
-import {FamousPeople} from "../../types";
+import {FamousPeople} from "../models/FamousPeople";
 
 const famousPeople:FamousPeople[] = [
   {
@@ -29,6 +29,12 @@ const famousPeople:FamousPeople[] = [
     name:"Napoleon Bonaparte",
     title:"leader",
   },
+  {
+    name:"Goethe",
+    title:"author",
+    aliases:["Johann Wolfgang von Goethe"]
+  },
+
   {
     name:"İbn Haldun",
     title:"author",
