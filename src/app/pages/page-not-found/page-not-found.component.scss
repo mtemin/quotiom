@@ -1,0 +1,71 @@
+:host{
+
+  #not-found-warning{
+    width:50%;
+    //height:20%;
+    margin:auto;
+    margin-top:50vh;
+    transform: translateY(-50%);
+    text-align:center;
+    background-color: tomato;
+    color: #252525;
+    border-radius: 3px;
+    padding: 2rem 4rem;
+    h4{
+      margin:0;
+      margin-bottom:1rem;
+      font-size:2.4rem;
+
+    }
+    p{
+      margin:0;
+      margin-bottom:1rem;
+    }
+    .url{
+      margin:0;
+      margin-bottom:1rem;
+      font-style:italic;
+      text-decoration: underline;
+    }
+    .homepage-btn{
+      border:0;
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      margin-top:2rem;
+      cursor: pointer;
+      a{
+      color: white;
+      text-decoration: none;
+        font-size:1rem;
+
+      }
+
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  :host {
+    #not-found-warning {
+    width: 70%;
+      padding: 1.6rem 3.2rem;
+      h4{
+        font-size:2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :host {
+    #not-found-warning {
+      width: 80%;
+      padding:1rem;
+      h4{
+        font-size:1.8rem;
+      }
+    }
+  }
+}
