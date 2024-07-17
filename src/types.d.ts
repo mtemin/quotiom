@@ -5,6 +5,7 @@ export type Category = {
 
 export type FamousPeople = {
   name:string,
-  aliases?: string[] | string,
+  title:string | string[],
+  aliases?: string | string[],
 
 }

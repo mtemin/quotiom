@@ -2,37 +2,53 @@ import {FamousPeople} from "../../types";
 
 const famousPeople:FamousPeople[] = [
   {
-    name:"Alfred Adler"
+    name:"Alfred Adler",
+    title:"author",
   },
   {
-    name:"Necip Fazıl Kısakürek"
+    name:"William Shakespeare",
+    title:"author",
   },
   {
-    name:"Marcus Aurelius"
+    name:"Necip Fazıl Kısakürek",
+    title:"author",
   },
   {
-    name:"Arthur Schopenhauer"
+    name:"Marcus Aurelius",
+    title:["author","philosopher"],
   },
   {
-    name:"Friedrich Nietzsche"
+    name:"Arthur Schopenhauer",
+    title:["author","philosopher"],
   },
   {
-    name:"Napoleon Bonaparte"
+    name:"Friedrich Nietzsche",
+    title:["author","philosopher,pyschologist"],
   },
   {
-    name:"İbn Haldun"
+    name:"Napoleon Bonaparte",
+    title:"leader",
   },
   {
-    name:"Cristiano Ronaldo"
+    name:"İbn Haldun",
+    title:"author",
   },
   {
-    name:"Muammar al-Gaddafi"
+    name:"Cristiano Ronaldo",
+    title:["footballer","sportsman"],
   },
   {
-    name:"Imam Sharawi"
+    name:"Muammar al-Gaddafi",
+    title:"leader",
+  },
+  {
+    name:"Imam Sharawi",
+    title:"author",
+    aliases:["Muhammad Metwalli al-Sha'rawi"]
   },
   {
     name:"Sagopa Kajmer",
+    title:"singer",
     aliases:["dj mic check","yunus özyavuz"]
   },
 ]
