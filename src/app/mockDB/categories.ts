@@ -3,19 +3,24 @@ import Category from '../../types';
 // @ts-ignore
 const categories:Category[] = [
   {
+    categoryTitle:"topics",
+    categoryDescription: "Browse by topic titles."
+  },
+  {
     categoryTitle:"books",
     categoryDescription: "Passages from books."
   },
+
   {
     categoryTitle:"people",
-    categoryDescription: "Famous people like authors, leaders"
+    categoryDescription: "Authors, leaders, celebrities"
   },
   {
     categoryTitle:"music",
     categoryDescription: "Quotes from songs"
   },
   {
-    categoryTitle:"proverb",
+    categoryTitle:"proverbs",
     categoryDescription: "Citations by previous generations"
   },
   {
