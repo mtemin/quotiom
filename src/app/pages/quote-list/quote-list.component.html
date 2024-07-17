@@ -1,0 +1,32 @@
+<app-navbar/>
+<div class="container">
+  <main id="quotes-page">
+  <app-categories-sidebar/>
+
+  <section id="quotes">
+
+    <div class="filter-and-sort">
+      <div class="search">
+        <input type="search" name="quoteSearch" id="quoteSearch">
+        <input type="button" value="Search">
+      </div>
+      <div class="sort">
+        <button class="most-liked">Most Liked</button>
+        <button class="recently-added">Recently Added</button>
+      </div>
+    </div>
+
+
+      <section id="quote-list">
+      <app-quote
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deleniti doloremque doloribus dolorum exercitationem impedit inventore iste laboriosam magnam magni, nemo nesciunt nisi numquam quisquam."
+        author="anonymous"
+        [likes]="674"/>
+      <app-quote
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+        author="goethe"
+        [likes]="421"/>
+      </section>
+    </section>
+  </main>
+</div>
