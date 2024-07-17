@@ -1,0 +1,10 @@
+<app-navbar/>
+
+<div class="container">
+<section id="categories">
+<app-category-card  *ngFor="let category of categories"
+                    [categoryTitle]="category.categoryTitle"
+                    [categoryDescription]="category.categoryDescription"
+/>
+</section>
+</div>
