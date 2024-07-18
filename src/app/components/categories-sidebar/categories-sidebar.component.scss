@@ -1,0 +1,40 @@
+:host{
+  width:18%;
+}
+
+//#categories-sidebar .p-accordion-header-link, .p-accordion .p-accordion-content{
+//background: #252525;
+//  border:0;
+//  padding:0.75rem;
+//  p{
+//    margin:0.4rem 0 0 0;
+//  }
+//}
+
+#categories-sidebar .p-accordion{
+  .p-accordion-content{
+    background: #252525;
+    border:0;
+    padding:0 1rem 0 1rem;
+    a{
+      display:block;
+      font-size:0.9rem;
+      text-decoration:none;
+      opacity:0.8;
+      margin:0.5rem;
+      &:hover{
+        transition:0.2s ease-in-out;
+        opacity:1;
+      }
+      &:first-child{
+        margin-top:0;
+      }
+    }
+  }
+  .p-accordion-header-link{
+    padding:0.75rem;
+    background: #252525;
+    border:0;
+
+  }
+}

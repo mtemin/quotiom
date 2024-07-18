@@ -1,0 +1,26 @@
+<aside id="categories-sidebar">
+  <p-accordion>
+    <p-accordionTab header="Books">
+      <a class="">
+        test
+      </a>
+      <a class="">
+        test
+      </a>
+      <a class="">
+        test
+      </a>
+    </p-accordionTab>
+    <p-accordionTab header="Movies">
+      <a class="">
+        movies
+      </a>
+    </p-accordionTab>
+    <p-accordionTab header="People">
+      <a [href]="'/person/' + person.id" class="" *ngFor="let person of famousPeople">
+        {{person.name}}
+      </a>
+    </p-accordionTab>
+  </p-accordion>
+
+</aside>
