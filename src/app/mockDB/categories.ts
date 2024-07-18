@@ -3,37 +3,41 @@ import {Category} from "../models/Category";
 
 const categories:Category[] = [
   {
-   title:"topics",
-   description: "Browse by topic titles."
+   name:"topics",
+   description: "Browse by topic names"
   },
   {
-   title:"books",
-   description: "Passages from books."
+   name:"books",
+   description: "Passages from books"
   },
 
   {
-   title:"people",
+   name:"people",
    description: "Authors, leaders, celebrities"
   },
   {
-   title:"music",
+   name:"music",
    description: "Quotes from songs"
   },
   {
-   title:"proverbs",
+   name:"proverbs",
    description: "Citations by previous generations"
   },
   {
-   title:"movies",
+    name:"idioms",
+    description: "Group of words that have a non-literal meaning"
+  },
+  {
+   name:"movies",
    description: "Excerpts from movies/fictional characters"
   },
   {
-   title:"animes",
+   name:"animes",
    description: "Quotations by fictional anime characters"
   },
   {
-   title:"cartoons & animations",
-   description: "Quotations by fictional cartoon characters."
+   name:"cartoons & animations",
+   description: "Quotations by fictional cartoon characters"
   },
 ]
 
