@@ -2,8 +2,10 @@ import {Component, signal, WritableSignal} from '@angular/core';
 import {NavbarComponent} from "../../components/navbar/navbar.component";
 import {CategoryCardComponent} from "../../components/category-card/category-card.component";
 import categories from "../../mockDB/categories";
-import {NgForOf} from "@angular/common";
-import {Category} from "../../../types";
+import {NgClass, NgForOf} from "@angular/common";
+import {Category} from "../../models/Category";
+import {count, Observable} from "rxjs";
+
 
 @Component({
   selector: 'app-categories',
@@ -12,6 +14,7 @@ import {Category} from "../../../types";
     NavbarComponent,
     CategoryCardComponent,
     NgForOf,
+    NgClass,
   ],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.scss',
@@ -19,5 +22,7 @@ import {Category} from "../../../types";
 })
 export class CategoriesComponent {
   categories:Category[] = categories;
+  // count$:Observable<number>
+
 
 }
