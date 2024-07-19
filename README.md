@@ -1,5 +1,7 @@
 # Quotiom
 
+This is a website made for browsing quotes, proverbs and idioms from all sources.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
 
 ## Development server
