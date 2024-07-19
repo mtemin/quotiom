@@ -5,5 +5,5 @@ export type Quote = {
   author: string,
   source?: string | string[],
   categories?: string | string[],
-  likes?: number,
+  likes: number,
 }
