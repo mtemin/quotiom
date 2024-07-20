@@ -134,7 +134,7 @@ export const quotes:Quote[] = [
     author:"Victor hugo",
     source:"books",
     categories:[],
-    likes:9999,
+    likes:19,
   },
 
 
