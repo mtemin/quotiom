@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Inject, Input, PLATFORM_ID} from '@angular/core';
 import {ActivatedRoute, Router, RouterLink} from "@angular/router";
 import {NavbarComponent} from "../../components/navbar/navbar.component";
 
@@ -15,10 +15,15 @@ import {NavbarComponent} from "../../components/navbar/navbar.component";
 })
 export class PageNotFoundComponent {
   url:string='';
-  constructor(private router: Router, private route: ActivatedRoute) {
+  constructor(private router: Router, private route: ActivatedRoute,@Inject(PLATFORM_ID) private platformId: string) {
 
   }
   ngOnInit(): void {
-    this.url = window.location.href;
+    if (this.platformId === 'browser') {
+      this.url = window.location.href;
+    } else {
+      // handle server-side rendering case
+      this.url = this.route.snapshot.url.join('/');
+    }
   }
 }
