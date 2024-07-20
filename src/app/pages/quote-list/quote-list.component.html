@@ -19,13 +19,11 @@
 
       <section id="quote-list">
       <app-quote
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deleniti doloremque doloribus dolorum exercitationem impedit inventore iste laboriosam magnam magni, nemo nesciunt nisi numquam quisquam."
-        author="anonymous"
-        [likes]="674"/>
-      <app-quote
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-        author="goethe"
-        [likes]="421"/>
+        *ngFor="let quote of quotes"
+        [id]="quote.id"
+        [text]="quote.text"
+        [author]="quote.author"
+        [likes]="quote.likes"/>
       </section>
     </section>
   </main>
