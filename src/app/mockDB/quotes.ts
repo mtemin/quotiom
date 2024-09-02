@@ -136,6 +136,15 @@ export const quotes:Quote[] = [
     categories:[],
     likes:19,
   },
+    {
+    id:15,
+    language:'tr',
+    text:"Ölmek istemediğin yerde bulunma",
+    author:"Mehmed Zahid Kotku",
+    source:"people",
+    categories:["life"],
+    likes:671,
+  },
 
 
 ]
