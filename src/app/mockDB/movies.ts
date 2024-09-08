@@ -36,21 +36,6 @@ const movies:Movie[] = [
     title:"Star Wars: Episode III - Revenge of the Sith",
     year:2005
   },
-  {
-    id:7,
-    title:"Forrest Gump",
-    year:1994
-  },
-  {
-    id:8,
-    title:"Forrest Gump",
-    year:1994
-  },
-  {
-    id:9,
-    title:"Forrest Gump",
-    year:1994
-  },
 
 ]
 

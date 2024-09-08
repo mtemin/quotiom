@@ -39,6 +39,7 @@ const categories:Category[] = [
    name:"cartoons & animations",
    description: "Quotations by fictional cartoon characters"
   },
+
 ]
 
 export default categories;
