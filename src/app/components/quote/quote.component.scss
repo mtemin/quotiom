@@ -1,13 +1,24 @@
 
   :host {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #353535;
-    border-radius: 3px;
-    padding: 0.4rem 0.8rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
+  a{
+    text-decoration: none;
+    color:#d9d9d9;
+    &:hover{
+      color:white;
+    }
+
+    article{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #353535;
+      //color:#d9d9d9;
+
+      border-radius: 3px;
+      padding: 0.4rem 0.8rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
     &:hover{
       color:white;
     }
@@ -39,4 +50,5 @@
         font-size:0.8rem;
       }
     }
+  }
   }
