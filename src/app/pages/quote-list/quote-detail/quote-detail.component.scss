@@ -1,0 +1,55 @@
+
+:host {
+.container{
+margin-top: 2rem;
+  width: 80%;
+
+    &:hover{
+      color:white;
+    }
+
+    article{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #353535;
+      //color:#d9d9d9;
+
+      border-radius: 3px;
+      padding: 0.4rem 0.8rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    &:hover{
+      color:white;
+    }
+
+    .quote-text {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .quote-lower-body {
+      display: flex;
+      justify-content: space-between;
+      margin:1rem 0 0 0;
+      .quote-author {
+        margin:0;
+        font-style: italic;
+        font-weight: 600;
+        text-transform: capitalize;
+        &::before{
+          content:"-";
+        }
+      }
+
+      .quote-likes {
+        margin:0;
+        font-style: italic;
+        font-size:0.8rem;
+      }
+    }
+}
+}
