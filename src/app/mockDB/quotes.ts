@@ -1,4 +1,4 @@
-import {Quote} from "../models/Quote";
+import { Quote } from "../models/Quote";
 
 export const quotes: Quote[] = [
   {
@@ -160,7 +160,7 @@ export const quotes: Quote[] = [
     language: 'tr',
     text: "Hepimiz hata yaparız ama önemli olan onların yerine doğruları koyabilmemizdir.",
     author: "yaşama sanatı",
-    categories: ["life","books"],
+    categories: ["life", "books"],
     likes: 100,
   },
   {
@@ -258,7 +258,7 @@ export const quotes: Quote[] = [
     language: 'tr',
     text: "Dünyada sanki bir garip veya bir yolcu gibi ol.",
     description: "",
-    source:"Buhâri, Rikak 3",
+    source: "Buhâri, Rikak 3",
     author: "",
     categories: ["hadith"],
     likes: 1634,
@@ -326,6 +326,69 @@ export const quotes: Quote[] = [
     author: "Epicurus",
     categories: [""],
     likes: 1051,
+  },
+  {
+    id: 36,
+    language: 'tr',
+    text: "Ölmek istemediğin yerde bulunma",
+    author: "Mehmed Zahid Kotku",
+    source: "people",
+    categories: ["life"],
+    likes: 671,
+  },
+  {
+    id: 37,
+    language: 'tr',
+    text: "Sahip olduklarımızın sadece beşte biriyle idare edebilir ve değişikliğin farkına bile varmayız",
+    author: "Francine Jay",
+    source: "people",
+    categories: ["life"],
+    likes: 493,
+  },
+  {
+    id: 38,
+    language: 'tr',
+    text: "Gamına gamlanıp olma mahzun, demine demlenip olma mağrur, ne dem baki ne gam baki, ya Hû",
+    author: "Yavuz Sultan Selim",
+    source: "people",
+    categories: ["life"],
+    likes: 1257,
+  },
+  {
+    id: 39,
+    language: 'tr',
+    text: "Asaleti kendinden olanın gösterişe ihtiyacı yoktur. Bahçıvanın başına gül taktığı görülmemiştir...",
+    author: "anonim",
+    source: "",
+    categories: [],
+    likes: 56,
+  },
+  {
+    id: 40,
+    language: 'tr',
+    text: "İlk var olan bütün diğer var olanların varlığının ilk nedenidir",
+    author: "Farabi",
+    source: "books",
+    categories: ["philosophy"],
+    likes: 716,
+  },
+  {
+    id: 41,
+    language: 'tr',
+    text: "Her nereye bakarsan kendi yüzündür, kimde ne görürsen kendi özündür",
+    author: "Yunus Emre",
+    source: "books",
+    categories: ["life"],
+    likes: 854,
+  },
+  {
+    id: 42,
+    language: 'tr',
+    text: "İnsan, yaratılmakla başına çok vahim bir şey geldiğini anlarsa uyanmış olur. Ölmek yaratılmış olmaktan daha şiddetli değildir.",
+    author: "İsmet Özel",
+    source: "",
+    categories: [],
+    likes: 767,
   },
 
 
