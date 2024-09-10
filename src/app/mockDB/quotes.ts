@@ -300,6 +300,33 @@ export const quotes: Quote[] = [
     categories: [""],
     likes: 8751,
   },
+  {
+    id: 33,
+    language: 'tr',
+    text: "Ölümden korkmak anlamsızdır çünkü yaşadığımız sürece ölüm yoktur, ölüm geldiğinde ise artık biz yokuz.",
+    description: "",
+    author: "Epikür",
+    categories: ["philosophy"],
+    likes: 515,
+  },
+  {
+    id: 34,
+    language: 'tr',
+    text: "Yoktum, varım, olmayacağım, umrumda değil.",
+    description: "",
+    author: "Epikür",
+    categories: ["philosophy"],
+    likes: 745,
+  },
+  {
+    id: 35,
+    language: 'en',
+    text: "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for",
+    description: "",
+    author: "Epicurus",
+    categories: [""],
+    likes: 1051,
+  },
 
 
 
