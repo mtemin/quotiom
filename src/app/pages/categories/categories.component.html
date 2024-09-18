@@ -1,12 +1,24 @@
 <app-navbar/>
 
 <div class="container">
+  <button (click)="solagit()">sola git lan</button>
+<!--  <button (click)="increment()">Increment</button>-->
+
+<!--  <div>Current Count: {{ count$ | async }}</div>-->
+
+<!--  <button (click)="decrement()">Decrement</button>-->
+
+<!--  <button (click)="reset()">Reset Counter</button>-->
 <section id="categories">
-<app-category-card  *ngFor="let category of categories"
-                    [categoryName]="category.name"
-                    [categoryDescription]="category.description"
-                    [id]="category.name+'-category'"
+  <p>
+    selectedCategory={{selectedCategory$|async}}
+  </p>
+  <app-category-card *ngFor="let category of categories"
+                     [categoryName]="category.name"
+                     [categoryDescription]="category.description"
+                     [id]="category.name+'-topic'"
+                     (click)="setSelectedCategory(category.name)"
 />
 </section>
-<!--                    [ngClass]="[category.name +'-category'+ ' category-card-component']"-->
+  <app-subcategory-list/>
 </div>
