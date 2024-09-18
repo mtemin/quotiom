@@ -39,6 +39,10 @@ const categories:Category[] = [
    name:"cartoons & animations",
    description: "Quotations by fictional cartoon characters"
   },
+  {
+     name:"copy pasta",
+     description: "Funny internet comments&scripts"
+    },
 
 ]
 
