@@ -14,7 +14,7 @@ import {NgClass, NgStyle} from "@angular/common";
 })
 export class CategoryCardComponent {
 
-  @Input({required:true}) categoryTitle!: string;
+  @Input({required:true}) categoryName!: string;
   @Input({required:true}) categoryDescription?: string;
   constructor(private element: ElementRef) {
   }
