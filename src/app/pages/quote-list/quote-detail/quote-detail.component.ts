@@ -1,10 +1,18 @@
 import {Component, Inject, Input} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {QuoteComponent} from "../../../components/quote/quote.component";
+import {quotes} from "../../../mockDB/quotes";
+import {NgForOf} from "@angular/common";
+import {NavbarComponent} from "../../../components/navbar/navbar.component";
 
 @Component({
   selector: 'app-quote-detail',
   standalone: true,
-  imports: [],
+  imports: [
+    QuoteComponent,
+    NgForOf,
+    NavbarComponent
+  ],
   templateUrl: './quote-detail.component.html',
   styleUrl: './quote-detail.component.scss'
 })
@@ -19,4 +27,6 @@ export class QuoteDetailComponent {
     let id = this.route.snapshot.paramMap.get('id');
 
   }
+
+  protected readonly quotes = quotes;
 }
