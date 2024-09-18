@@ -9,6 +9,9 @@
   margin-top: 2rem;
   transition:0.4s ease-in-out;
   margin-left: 0;
+    .category-card-component{
+      transition:0.4s ease-in-out;
+    }
   }
 
 @media screen and (max-width:768px) {
@@ -24,5 +27,5 @@
 }
 
 .soldayim-abi{
-  margin-left: -130%!important;
+  margin-left: -180%!important;
 }

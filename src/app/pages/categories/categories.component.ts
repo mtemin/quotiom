@@ -5,6 +5,7 @@ import categories from "../../mockDB/categories";
 import {NgClass, NgForOf} from "@angular/common";
 import {Category} from "../../models/Category";
 import {count, Observable} from "rxjs";
+import {SubcategoryListComponent} from "../../components/subcategory-list/subcategory-list.component";
 
 
 @Component({
@@ -15,6 +16,7 @@ import {count, Observable} from "rxjs";
     CategoryCardComponent,
     NgForOf,
     NgClass,
+    SubcategoryListComponent,
   ],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.scss',
@@ -23,6 +25,19 @@ import {count, Observable} from "rxjs";
 export class CategoriesComponent {
   categories:Category[] = categories;
   // count$:Observable<number>
+
+  solagit(category:string){
+    let categoryCard = document.querySelector(`#${category}-topic`);
+    if(categoryCard){
+      categoryCard.classList.toggle('soldayim-abi');
+    }else{
+      console.log("btn is null");
+    }
+  }
+
+  setSelectedCategory(category:string){
+    console.log(category)
+  }
 
 
 }
