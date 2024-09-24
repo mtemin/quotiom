@@ -1,4 +1,4 @@
-import { Component, } from '@angular/core';
+import {Component, Injectable,} from '@angular/core';
 import { NavbarComponent } from "../../components/navbar/navbar.component";
 import { CategoryCardComponent } from "../../components/category-card/category-card.component";
 import categories from "../../mockDB/categories";
@@ -6,8 +6,9 @@ import {CommonModule, NgClass, NgForOf} from "@angular/common";
 import { Category } from "../../models/Category";
 import { Observable } from "rxjs";
 import { SubcategoryListComponent } from "../../components/subcategory-list/subcategory-list.component";
-import { Store } from "@ngrx/store";
-import { increment, decrement, reset } from "../../state/counter/counter.actions"; // Import action creators
+import {select, Store} from "@ngrx/store";
+import { increment, decrement, reset } from "../../state/counter/counter.actions";
+import {setCurrentCategory} from "../../state/currentCategory/currentCategory.actions"; // Import action creators
 
 @Component({
   selector: 'app-categories',
@@ -27,24 +28,14 @@ import { increment, decrement, reset } from "../../state/counter/counter.actions
 export class CategoriesComponent {
 
   categories: Category[] = categories;
-  count$: Observable<number>;
+  currentCategory$: Observable<string>;
 
-  constructor(private store: Store<{ count: number }>) {
-    this.count$ = store.select('count');
+
+  constructor(private store: Store<{ currentCategory:string }>) {
+    this.currentCategory$ = store.select('currentCategory');
+
   }
-
-  increment() {
-    this.store.dispatch(increment()); // Use action creators
-  }
-
-  decrement() {
-    this.store.dispatch(decrement());
-  }
-
-  reset() {
-    this.store.dispatch(reset());
-  }
-
+  
   solagit(category: string) {
     let categoryCard = document.querySelector(`#${category}-topic`);
     if (categoryCard) {
@@ -55,6 +46,6 @@ export class CategoriesComponent {
   }
 
   setSelectedCategory(category: string) {
-    console.log(category);
+    this.store.dispatch(setCurrentCategory({category:category}));
   }
 }

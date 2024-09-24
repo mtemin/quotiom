@@ -20,12 +20,6 @@
                      (click)="setSelectedCategory(category.name)"
 />
 </section>
-  <button (click)="increment()">Increment</button>
-
-  <div>Current Count: {{ count$ | async }}</div>
-
-  <button (click)="decrement()">Decrement</button>
-
-  <button (click)="reset()">Reset Counter</button>
+  <p id="testosas">{{currentCategory$ | async}}</p>
   <app-subcategory-list/>
 </div>
