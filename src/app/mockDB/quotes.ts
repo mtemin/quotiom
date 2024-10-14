@@ -435,6 +435,42 @@ export const quotes: Quote[] = [
     categories: [""],
     likes: 955,
   },
+  {
+    id: 49,
+    language: 'tr',
+    text: "Ömrümüzde hasretiniz çektiğimiz şeye asla kavuşamayacağız, bu kesin; ama ömrümüzü o şekilde sürdüreceğiz ki her aşamada aramayı göze aldığımız şeyi hak eden biz olacağız",
+    author: "İsmet Özel",
+    source: "people",
+    categories: [""],
+    likes: 615,
+  },
+  {
+    id: 50,
+    language: 'tr',
+    text: "Her şey, neye layıksa ona dönüşür",
+    author: "Mevlana",
+    source: "people",
+    categories: [""],
+    likes: 341,
+  },
+  {
+    id: 51,
+    language: 'en',
+    text: "To win any battle, you must fight as if you are already dead",
+    author: "anonymous",
+    source: "people",
+    categories: [""],
+    likes: 51,
+  },
+  {
+    id: 52,
+    language: 'tr',
+    text: "Kimsenin iç alemine karışma, kimseyi iç alemine karıştırma.Kimseye iç alemini açma. Gizli tut. Yan, ama tütme.",
+    author: "İbn Haldun",
+    source: "people",
+    categories: [""],
+    likes: 612,
+  },
 
 
 
