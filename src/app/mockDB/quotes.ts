@@ -471,6 +471,16 @@ export const quotes: Quote[] = [
     categories: [""],
     likes: 612,
   },
+    {
+    id: 53,
+    language: 'tr',
+    text: "Ümit kalmayınca telaş da biter.",
+    author: "Reis Bey",
+    source: "books",
+    categories: [""],
+    likes: 612,
+  },
+
 
 
 
